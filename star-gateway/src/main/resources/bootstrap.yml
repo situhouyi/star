@@ -1,0 +1,23 @@
+server:
+  port: 8021
+spring:
+  profiles:
+    active: dev
+  application:
+    name: star-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://127.0.0.1:8848
+        namespace:
+        username: nacos
+        password: nacos
+      config:
+        server-addr: http://127.0.0.1:8848
+        file-extension: yaml
+        namespace:
+        username: nacos
+        password: nacos
+
+
+
